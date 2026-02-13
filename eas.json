@@ -13,11 +13,7 @@
         "simulator": false
       },
       "android": {
-        "buildType": "apk",
-        "gradleProperties": {
-          "android.enableProguardInReleaseBuilds": "true",
-          "android.enableR8.fullMode": "true"
-        }
+        "buildType": "apk"
       }
     },
     "production": {
@@ -26,11 +22,7 @@
         "resourceClass": "m-medium"
       },
       "android": {
-        "buildType": "apk",
-        "gradleProperties": {
-          "android.enableProguardInReleaseBuilds": "true",
-          "android.enableR8.fullMode": "true"
-        }
+        "buildType": "apk"
       }
     }
   }
