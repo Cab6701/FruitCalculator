@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "FruitCaculator",
-    "slug": "FruitCaculator",
+    "name": "FruitCalculator",
+    "slug": "FruitCalculator",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -24,7 +24,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.fruitcaculator.app",
+      "bundleIdentifier": "com.fruitcalculator.app",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
