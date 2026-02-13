@@ -18,6 +18,9 @@ SplashScreen.preventAutoHideAsync();
 
 const Tab = createBottomTabNavigator();
 const HistoryStack = createNativeStackNavigator<HistoryStackParamList>();
+const HomeStack = createNativeStackNavigator();
+const StatsStack = createNativeStackNavigator();
+const SettingsStack = createNativeStackNavigator();
 
 function HistoryStackNavigator() {
   return (
@@ -33,6 +36,42 @@ function HistoryStackNavigator() {
         options={{ title: 'Chi tiết hoá đơn' }}
       />
     </HistoryStack.Navigator>
+  );
+}
+
+function HomeStackNavigator() {
+  return (
+    <HomeStack.Navigator>
+      <HomeStack.Screen
+        name="Home"
+        component={HomeScreen}
+        options={{ title: 'Hoá đơn hoa quả' }}
+      />
+    </HomeStack.Navigator>
+  );
+}
+
+function StatsStackNavigator() {
+  return (
+    <StatsStack.Navigator>
+      <StatsStack.Screen
+        name="Stats"
+        component={StatsScreen}
+        options={{ title: 'Thống kê theo ngày' }}
+      />
+    </StatsStack.Navigator>
+  );
+}
+
+function SettingsStackNavigator() {
+  return (
+    <SettingsStack.Navigator>
+      <SettingsStack.Screen
+        name="Settings"
+        component={SettingsScreen}
+        options={{ title: 'Cài đặt danh sách quả' }}
+      />
+    </SettingsStack.Navigator>
   );
 }
 
@@ -84,10 +123,10 @@ export default function App() {
               },
             })}
           >
-            <Tab.Screen name="Hoá đơn" component={HomeScreen} />
+            <Tab.Screen name="Hoá đơn" component={HomeStackNavigator} />
             <Tab.Screen name="Lịch sử" component={HistoryStackNavigator} />
-            <Tab.Screen name="Thống kê" component={StatsScreen} />
-            <Tab.Screen name="Cài đặt" component={SettingsScreen} />
+            <Tab.Screen name="Thống kê" component={StatsStackNavigator} />
+            <Tab.Screen name="Cài đặt" component={SettingsStackNavigator} />
           </Tab.Navigator>
         </NavigationContainer>
       </SafeAreaProvider>

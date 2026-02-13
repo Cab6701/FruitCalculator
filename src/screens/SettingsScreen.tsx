@@ -183,9 +183,8 @@ export const SettingsScreen: React.FC = () => {
   );
 
   return (
-    <SafeAreaView edges={["top"]} style={styles.safeArea}>
+    <SafeAreaView edges={[]} style={styles.safeArea}>
       <View style={styles.container}>
-        <Text style={styles.title}>Cài đặt danh sách quả</Text>
         <Text style={styles.subtitle}>
           Thiết lập sẵn tên quả và giá/kg (đơn vị nghìn đồng). Khi tạo hoá đơn,
           bạn chỉ cần chọn quả và nhập số kg.
@@ -247,7 +246,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: "#666",
     paddingHorizontal: 16,
-    paddingTop: 4,
+    paddingTop: 12,
   },
   listWrap: {
     flex: 1,

@@ -103,7 +103,7 @@ export const HistoryScreen: React.FC = () => {
   );
 
   return (
-    <SafeAreaView edges={['top']} style={styles.safeArea}>
+    <SafeAreaView edges={[]} style={styles.safeArea}>
       <View style={styles.container}>
       {loading ? (
         <View style={styles.center}>
@@ -117,7 +117,6 @@ export const HistoryScreen: React.FC = () => {
       ) : (
         <>
           <View style={styles.headerRow}>
-            <Text style={styles.title}>Lịch sử hoá đơn</Text>
             <TouchableOpacity onPress={handleClearAll}>
               <Text style={styles.clearText}>Xoá tất cả</Text>
             </TouchableOpacity>
@@ -149,7 +148,7 @@ const styles = StyleSheet.create({
     paddingBottom: 4,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-end',
   },
   title: {
     fontSize: 20,

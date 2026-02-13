@@ -111,10 +111,9 @@ export const StatsScreen: React.FC = () => {
   );
 
   return (
-    <SafeAreaView style={styles.safeArea}>
+    <SafeAreaView edges={[]} style={styles.safeArea}>
       <View style={styles.container}>
         <View style={styles.headerRow}>
-          <Text style={styles.title}>Thống kê theo ngày</Text>
           {stats.length > 0 && !loading && (
             <TouchableOpacity onPress={handleClearAll}>
               <Text style={styles.clearText}>Xoá tất cả</Text>
@@ -157,7 +156,7 @@ const styles = StyleSheet.create({
   headerRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-end',
     paddingHorizontal: 16,
     paddingTop: 12,
     paddingBottom: 4,

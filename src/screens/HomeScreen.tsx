@@ -165,10 +165,8 @@ export const HomeScreen: React.FC = () => {
   };
 
   return (
-    <SafeAreaView edges={["top"]} style={styles.safeArea}>
+    <SafeAreaView edges={[]} style={styles.safeArea}>
       <View style={styles.container}>
-        <Text style={styles.title}>Hoá đơn hoa quả</Text>
-
         <KeyboardAvoidingView
           behavior={Platform.OS === "ios" ? "padding" : "height"}
           style={styles.content}

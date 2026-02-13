@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "FruitCalculator",
-    "slug": "FruitCalculator",
+    "slug": "FruitCaculator",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -30,6 +30,7 @@
       }
     },
     "android": {
+      "package": "com.fruitcalculator.app",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"

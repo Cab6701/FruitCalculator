@@ -32,7 +32,7 @@ export const InvoiceDetailScreen: React.FC<Props> = ({ route }) => {
   };
 
   return (
-    <SafeAreaView edges={['top']} style={styles.safeArea}>
+    <SafeAreaView edges={[]} style={styles.safeArea}>
       <View style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.dateText}>{formatDateTime(invoice.createdAt)}</Text>
